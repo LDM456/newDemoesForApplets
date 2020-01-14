@@ -1,0 +1,64 @@
+<!--pages/progress/progress.wxml-->
+<view class="title">基础内容--progress</view>
+
+<view style="padding: 20rpx">
+    <!-- precent -->
+       <progress percent="{{num}}" /> 
+</view>
+
+<view style="padding: 20rpx">
+    <!-- show-info 右侧显示进度条-->
+       <progress percent="{{num}}" show-info="{{true}}"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!-- border-radius 圆角大小-->
+       <progress percent="{{num}}" show-info="{{true}}" border-radius="20"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--font-size 右侧百分比大小 -->
+       <progress percent="{{num}}" show-info="{{true}}" border-radius="20" font-size="20"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--stroke-width 进度条的线宽 -->
+       <progress percent="{{num}}" show-info="{{true}}" border-radius="20" font-size="20" stroke-width="10"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--color 进度条颜色 仅支持16进制-->
+       <progress percent="{{num}}" show-info="{{true}}" border-radius="20" font-size="20" stroke-width="10" color="#000"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--active-color 已选进度条的颜色-->
+       <progress percent="50" show-info="{{true}}" border-radius="20" font-size="20" stroke-width="10"  active-color="#000"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--backgroundColor 未选择的进度条颜色 -->
+       <progress percent="30" show-info="{{true}}" border-radius="20" font-size="20"stroke-width="10" active-color="#bf1414" background-color="#000"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--active 从左到右的动画 -->
+       <progress percent="{{80}}" show-info="{{true}}" border-radius="20" font-size="20"stroke-width="10" active-color="#bf1414" background-color="#000" active="{{true}}"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--active-mode backwards动画从头播 forwards动画从上次结束点播 -->
+       <progress percent="{{80}}" show-info="{{true}}" border-radius="20" font-size="20"stroke-width="10" active-color="#bf1414" background-color="#000" active="{{true}}" active-mode="backwards"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--duration 进度条加1所需要的秒数 -->
+       <progress percent="{{80}}" show-info="{{true}}" border-radius="20" font-size="20"stroke-width="10" active-color="#bf1414" background-color="#000" active="{{true}}" active-mode="backwards" duration="300"/> 
+</view>
+
+<view style="padding: 20rpx">
+    <!--bindactiveend 动画完成事件 -->
+       <progress percent="{{80}}" show-info="{{true}}" border-radius="20" font-size="20"stroke-width="10" active-color="#bf1414" background-color="#000" active="{{true}}" active-mode="backwards" duration="10" bindactiveend="consoleLog"/> 
+</view>
+
+

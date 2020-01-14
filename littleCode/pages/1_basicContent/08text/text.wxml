@@ -1,0 +1,12 @@
+<!--pages/08text/text.wxml-->
+<view class="title">基础内容--text</view>
+
+<view class="btn-area">
+    <view class="body-view">
+        <text>{{text}}</text>
+        <button bindtap="add">add lines</button>
+        <button bindtap="remove">remove line</button>
+    </view>
+</view>
+<text selectable="{{true}}" space="nbsp" decode="{{false}}">12&nbsp;31    23123    </text>
+

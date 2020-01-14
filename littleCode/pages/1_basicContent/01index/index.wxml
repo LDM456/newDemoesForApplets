@@ -1,0 +1,11 @@
+<text>加油！努力尽快把小程序学会{{name}}</text>
+<view wx:for="{{stu}}">
+    <text>
+        {{item.name}}--{{item.id}}--{{item.age}}
+    </text>
+</view>
+
+<!-- 事件 -->
+<view >当前计数：{{num}}</view>
+<button size="mini" bindtap="changeNum">+</button>
+<button size="mini" bindtap="changeNum2">-</button>

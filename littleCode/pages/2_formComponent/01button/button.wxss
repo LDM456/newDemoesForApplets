@@ -1,0 +1,7 @@
+/* pages/2_formComponent/01button/button.wxss */
+
+@import "../../lib/public.wxss";
+.hoverClass {
+    color: #fff;
+    background-color: #55b144;
+}

@@ -1,0 +1,27 @@
+<view>相当于div的块级元素</view>
+<view class="box"> 一个盒子</view>
+
+
+<view class="box2" hover-class="box-hover" hover-stay-time="0"> 
+    <view hover-class="son-hover" class="son" hover-start-time="2000" hover-stay-time="0" hover-stop-propagation="{{true}}">
+        子元素
+    </view>
+父级元素
+
+</view>
+<view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section__title">flex-direction: column</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>

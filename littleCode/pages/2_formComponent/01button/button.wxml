@@ -1,0 +1,25 @@
+<view class="title">表单组件--button</view>
+
+<button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">绿色按钮</button>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">白色按钮</button>
+<button type="warn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">红色按钮</button>
+<button form-type="reset">重置</button>
+<button form-type="submit">提交</button>
+<view class="title">微信开放能力</view>
+<button open-type="contact">打开客服会话</button>
+<button open-type="share">触发用户转发</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhone">获取用户手机号</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+<button open-type="launchApp" app-parameter="wechat" binderror="openApp">打开App</button>
+<button open-type="openSetting" >打开授权设置页</button>
+<button open-type="feedback" >打开意见反馈页面</button>
+<view class="title">指定返回用户信息的语言</view>
+<button lang="zh_Cn">返回的语言</button>
+
+<view class="title">普通的样式</view>
+<button hover-class="hoverClass">按下去样式</button>
+<button hover-stop-propagation="{{false}}">是否阻止本节点祖先节点出现的点击状态</button>
+<button hover-start-time="1000" hover-class="hoverClass">按住后多少毫秒出现点击状态</button>
+<button hover-stay-time="500">松开后保留多久的点击</button>
+<button session-from="123" open-type="contact"bindtap="getSession">回话来源，open-type为concat时有效</button>
+<button bind:tap="changeBtn">改变按钮</button>

@@ -1,0 +1,8 @@
+<!--pages/2_formComponent/03edit/edit.wxml-->
+<text class="title">表单之富文本</text>
+
+
+<view class="contianer">
+    <editor class="ql-container" id="editer" placeholder="请输入内容" show-img-size="true" show-img-toolbar="true"
+    show-img-resize="true" ></editor>
+</view>

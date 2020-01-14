@@ -1,0 +1,18 @@
+<view style="text-align:center">input的使用</view>
+
+<input placeholder="请输入" disabled="{{true}}"/>
+
+<input value="你好" />
+
+<!-- 文本输入键盘 -->
+<input type="text" />
+<!-- 数字输入键盘 -->
+<input type="number" />
+<!-- 身份证输入键盘 -->
+<input type="idcard" />
+<!-- 带小数的数字键盘 -->
+<input type="digit" />
+
+<input password="{{true}}" />
+
+<input bindinput="keyin" bindfocus="keyfoucs" bindblur="keyblur"  />

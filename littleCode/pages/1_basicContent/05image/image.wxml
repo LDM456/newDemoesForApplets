@@ -1,0 +1,7 @@
+<!--pages/image/image.wxml-->
+<button bindtap="handleTap">选中图片</button>
+<image src="{{imagepath}}"show-menu-by-longpress />
+
+
+<!-- 长按图片识别小程序码（二维码）-->
+<image show-menu-by-longpress  src="http://img3.imgtn.bdimg.com/it/u=3987907653,720009510&fm=214&gp=0.jpg"/>

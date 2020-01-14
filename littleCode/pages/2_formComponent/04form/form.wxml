@@ -1,0 +1,35 @@
+<!-- pages/2_formComponent/04form/form.wxml -->
+<text class="title">表单组件之表单</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+        <view class="section_title">switch</view>
+        <switch name="switch" />
+    </view>
+    <view class="section section_gap">
+        <view class="setion_title"> slider </view>
+        <slider name="slider" show-value="{{true}}" />
+    </view>
+
+    <view class="section">
+    <view class="section_title">input</view>
+    <input name="input" placeholder="请输入" />
+    </view>
+    <view class="section section_gap">
+        <view class="section_title">radio</view>
+        <radio-group name="radio-group">
+            <label> <radio value="1" /> 123</label>
+            <label> <radio value="2" /> 456</label>
+        </radio-group>
+    </view>
+    <view class="section section_gap">
+        <view class="section_title">checkBox</view>
+        <checkbox-group name="checkBox">
+            <label><checkbox value="checkBox1" />checkBox1</label>
+            <label><checkbox value="checkBox2" />checkBox2</label>
+        </checkbox-group>
+    </view>
+    <view class="btn-area">
+        <button form-type="submit">submit</button>
+        <button form-type="reset">reset</button>
+    </view>
+</form>

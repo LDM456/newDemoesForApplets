@@ -1,0 +1,14 @@
+<!--pages/scrll/scroll.wxml-->
+<view> scroll 滚动</view>
+
+<scroll-view class="box" scroll-x>
+    <view class="son" wx:for="{{100}}">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="box2" scroll-y lower-threshold="{{100}}" bindscrolltolower="handlescroll">
+    <view class="son" wx:for="{{num}}">{{item}}</view>
+</scroll-view>
+
+<view class="box4"></view>
+<view class="box5"></view>
+

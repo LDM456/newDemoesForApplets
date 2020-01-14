@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/2_formComponent/04form/form",
+    "pages/2_formComponent/03edit/edit",
+    "pages/2_formComponent/02checkBox/checkBox",
+    "pages/2_formComponent/01button/button",
+    "pages/1_basicContent/08text/text",
+    "pages/1_basicContent/07progress/progress",
+    "pages/1_basicContent/06icon/icon",
+    "pages/1_basicContent/05image/image",
+    "pages/1_basicContent/04view/view",
+    "pages/1_basicContent/03scroll/scroll",
+    "pages/1_basicContent/02input/input",
+    "pages/1_basicContent/01index/index"
+  ],
+  "sitemapLocation": "sitemap86.json"
+}

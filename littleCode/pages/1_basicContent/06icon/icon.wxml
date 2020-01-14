@@ -1,0 +1,20 @@
+<!--pages/icon/icon.wxml-->
+<view class="title">基础内容--icon</view>
+
+<view class="group">
+    <block wx:for="{{iconSize}}">
+        <icon type="success" size="{{item}}" />
+    </block>
+</view>
+
+<view class="group">
+    <block wx:for="{{iconType}}">
+        <icon type="{{item}}" size="30" />
+    </block>
+</view>
+
+<view class="group">
+    <block wx:for="{{iconColor}}">
+        <icon type="success" size="40" color="{{item}}" />
+    </block>
+</view>

@@ -1,0 +1,31 @@
+/* pages/scrll/scroll.wxss */
+
+.box {
+    background-color: pink;
+    white-space: nowrap;
+}
+
+.son {
+    background-color: #fff;
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box2 {
+    background-color: #ccc;
+    height: 200px;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.box5 {
+    width: 200rpx;
+    height: 200rpx;
+    background-color: red;
+}

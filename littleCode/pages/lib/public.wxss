@@ -1,0 +1,11 @@
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 40rpx;
+    padding: 10px 0 20px 0;
+    color: red;
+    background-color: #eee;
+    font-size: 40rpx;
+    font-weight: 600;
+    display: inline-block;
+}

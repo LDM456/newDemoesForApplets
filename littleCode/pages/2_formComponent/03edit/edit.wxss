@@ -1,0 +1,4 @@
+/* pages/2_formComponent/03edit/edit.wxss */
+
+@import "/pages/lib/weui.wxss";
+@import "/pages/lib/public.wxss";

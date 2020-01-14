@@ -1,0 +1,8 @@
+<!--pages/2_formComponent/02checkBox/checkBox.wxml-->
+<text class="title">表单组件--复选框</text>
+
+<checkbox-group>
+    <label wx:for="{{array}}" wx:for-item="item" wx:key="{{item.id}}">
+        <checkbox value="{{item.value}}" checked="{{item.checked}}" disabled="{{item.id ==2}}" color="red"/> {{item.name}}
+    </label>
+</checkbox-group>

@@ -1,0 +1,3 @@
+/* pages/08text/text.wxss */
+
+@import '../../lib/public.wxss';

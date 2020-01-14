@@ -1,0 +1,55 @@
+/* pages/view/view.wxss */
+
+@import "../../lib/weui.wxss";
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+.son {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.son-hover {
+    background-color: #000;
+}
+
+.box-hover {
+    font-size: 20px;
+    background-color: blue;
+}
+
+.page-section {
+    margin-bottom: 20rpx;
+}
+
+.flex-wrp {
+    display: flex;
+}
+
+.bc_green {
+    background: green;
+    width: 100px;
+    height: 100px;
+}
+
+.bc_red {
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+.bc_blue {
+    background: blue;
+    width: 100px;
+    height: 100px;
+}
