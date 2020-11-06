@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = ['我', '爱', '我的', '祖国'];
+        var obj = [{
+            name: "我"
+        }, {
+            name: "爱"
+        }, {
+            name: "我的"
+        }, {
+            name: "祖国"
+        }];
+
+        arr.forEach((item, index, self) => {
+            // console.log(item, index, self);
+        })
+        var arr = [40, 100, 1, 5, 25, 10, 1];
+        // arr.sort(function(a, b) {
+        //     // console.log(a, b);
+        //     return a - b
+        // });
+        // console.log(arr.find(item => item == 1));
+        function isValid(s) {
+            let map = {
+                '(': ')',
+                '{': '}',
+                '[': ']',
+            }
+            let res = [];
+            for (var i = 0; i < s.length; i++) {
+                if (map[s[i]]) {
+                    //左括号推入栈中
+                    res.push(s[i])
+                } else {
+                    if (map[res.pop()] != s[i]) {
+                        return i;
+                    } else {
+                        continue
+                    }
+
+                }
+            }
+            return res.length === 0;
+        }
+        // console.log(isValid('{((i)ii)i}s'));
+        var climStairs = function(n) {
+            if (n === 1 || n == 2) {
+                return n;
+            }
+            let pre = 2;
+            let beforePre = 1;
+            let temp = null;
+            for (var i = 3; i <= n; i++) {
+                temp = pre;
+                pre = pre + beforePre;
+                beforePre = temp
+            }
+            return pre
+        }
+        console.log(climStairs(4));
+    </script>
+</body>
+
+</html>

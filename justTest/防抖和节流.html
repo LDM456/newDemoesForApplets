@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 1000px;
+            height: 500px;
+            background-color: #ccc;
+            font-size: 40px;
+            text-align: center;
+            line-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script>
+        const box = document.getElementById('box');
+        // box.onmousemove = function(e) {
+        //     box.innerHTML = `${e.clientX}, ${e.clientY}`
+        // }
+        // 实现开始 -- 防抖
+        // function debounce(func, delay) {
+        //     // 定时清除定时器
+        //     let timeout;
+
+        //     return function() {
+        //         clearTimeout(timeout)
+        //         timeout = setTimeout(() => {
+        //             func.apply(this, arguments)
+        //         }, delay);
+        //     }
+        // }
+
+        // 节流
+        function throttle(func, delay) {
+            let run = true
+            return function() {
+                if (!run) {
+                    return;
+                }
+                run = false;
+                setTimeout(() => {
+                    func.apply(this, arguments)
+                    run = true
+                }, delay);
+            }
+        }
+
+
+        // // 使用 -- 只显示最后鼠标停留后的坐标
+        // box.onmousemove = debounce(function(e) {
+        //     box.innerHTML = `${e.clientX},${e.clientY}`
+        // }, 1000)
+        box.onmousemove = throttle(function(e) {
+            box.innerHTML = `${e.clientX},${e.clientY}`
+        }, 1000)
+    </script>
+</body>
+
+</html>

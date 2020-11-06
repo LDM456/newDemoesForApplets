@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var defaults = {
+            options: {
+                remove: true,
+                enable: false,
+                instance: {}
+            },
+            log: {
+                warn: true,
+                error: true
+            }
+        };
+        var config = {
+                options: {
+                    remove: false,
+                    instance: null
+                }
+            }
+            // ES6对象解构
+            // config.options = config.options || {};
+            // config.log = config.log || {}; 
+            // {
+            //     options: {
+            //         remove: config.options.remove =
+            //             defaults.options.remove,
+            //         enable: config.options.enable =
+            //             defaults.options.enable,
+            //         instance: config.options.instance =
+            //             defaults.options.instance
+            //     } = {},
+            //     log: {
+            //         warn: config.log.warn =
+            //             defaults.log.warn,
+            //         error: config.log.error =
+            //             defaults.log.error
+            //     } = {}
+            // } = config;
+            // console.log(defaults);
+            // 把 defaults合并进config
+            //     {
+            //         let {
+            //             options: {
+            //                 remove = defaults.options.remove,
+            //                 enable = defaults.options.enable,
+            //                 instance = defaults.options.instance
+            //             } = {},
+            //             log: {
+            //                 warn = defaults.log.warn,
+            //                 error = defaults.log.error
+            //             } = {}
+            //         } = config;
+            //         config = {
+            //             options: {
+            //                 remove,
+            //                 enable,
+            //                 instance
+            //             },
+            //             log: {
+            //                 warn,
+            //                 error
+            //             }
+            //         }
+            //     }
+            // console.log(config);
+    </script>
+</body>
+
+</html>
